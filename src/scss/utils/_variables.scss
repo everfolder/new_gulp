@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url(../../assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url(../../assets/fonts/Poppins-Regular.ttf);
+}
+
+:root{
+
+  /**  Отступы  */
+  --gap-xl: 20px;
+  --gap-l: 15px;
+
+  --padding-block: 20px;
+  --padding-inline: 20px;
+
+  /**  Скругления углов  */
+  --border-radius-default: 20px;
+
+  /**  Основные цвета */
+  --main-text: #3a3a3a;
+  --main-nav-text: rgb(0, 0, 0);
+  --main-black-nav-text: #FFFFFF;
+  --main-black-text: #333333;
+  --main-desc-card-black-text: #b39f9f;
+  --main-desc-card-text: #898989;
+
+
+  /**  Шрифты */
+  --font-family-title: "Poppins", sans-serif;
+}
