@@ -7,15 +7,17 @@
 @use 'base/layout';
 
 // ==== 3. Layout ====
-@use 'layout/container';
+@use 'layout/nav';
+@use 'layout/index/nc-section-main';
 
 // ==== 4. Components ====
-@use 'components/button';
+@use 'components/_button_nc-section.scss';
 @use 'components/card';
-@use 'components/nav';
+
 
 body {
   background-color: var(--main-color);
+  font-family: var(--font-family-title);
 }
 
 .container{
