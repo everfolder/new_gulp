@@ -7,4 +7,34 @@
             <button type="submit" class="nc-btn">BUY NOW</button>
         </div>
     </section>
+    <section class="content__br-section">
+        <div class="block-content-br">
+            <div class="block-content-br__header">
+                Browse The Range
+            </div>
+            <div class="block-content-br__descriptor">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+            <div class="block-content-br__rooms">
+                <div>
+                    @@include('../components/_el-rooms.html', {
+                    "img": "./assets/images/rooms-1",
+                    "text": "Dining"
+                    })
+                </div>
+                <div>
+                    @@include('../components/_el-rooms.html', {
+                    "img": "./assets/images/rooms-2",
+                    "text": "Living"
+                    })
+                </div>
+                <div>
+                    @@include('../components/_el-rooms.html', {
+                    "img": "./assets/images/rooms-3",
+                    "text": "Bedroom"
+                    })
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
