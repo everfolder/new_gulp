@@ -1,0 +1,108 @@
+@use '../../utils/variables';
+
+.el-furnerute-block{
+    position: relative;
+    display: inline-block;
+    background-color: #F4F5F7;
+
+    &__img-main{
+        display: block;
+        width: 100%;
+    }
+
+    &__img-sell{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 2; 
+    }
+
+    .edit{
+        padding: 0 5% 0;
+
+        &__title{
+            font-weight: 600;
+            font-size: 24px;
+            color: var(--main-text);
+        }
+
+        &__descriptor{
+            font-weight: 500;
+            font-size: 16px;
+            color: var(--main-desc-card-text);
+            margin: -4% 0 -2%;
+        }
+
+        &__cost{
+            font-weight: 600;
+            font-size: 20px;
+            color: var(--main-text);
+        }
+
+        .furneture-span{
+            color: var(--sell-cost-text);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0%;
+            text-decoration: line-through;
+
+        }
+    }
+
+}
+
+.content{
+
+    &__op-section{
+
+        .block-content-op{
+
+            &__header{
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 120%;
+                letter-spacing: 0%;
+                text-align: center;
+                color: var(--main-text);
+            }
+
+            &__furneture{
+                margin-top: 2%;
+            }
+
+            &__btn-edit{
+                margin-top: 3%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .bc-btn{
+                    width: 20%;
+                    height: 6vh;
+                    color: var(--btn-yellow-text);
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 150%;
+                    letter-spacing: 0%;
+                    background-color: transparent;
+                    border: 1px solid var(--btn-yellow-text);
+                }
+
+            }
+        }
+    }
+}
+
+
+.block-furneture-edit{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--gap-xl);
+
+
+    @media screen and (min-width: 1500px) {
+        gap: 110px;
+    }
+}

@@ -9,17 +9,21 @@
 // ==== 3. Layout ====
 @use 'layout/nav';
 @use 'layout/index/nc-section-main';
+@use 'layout/index/op-section-main';
+@use 'layout/index/br-section-main';
 
 // ==== 4. Components ====
-@use 'components/el-rooms';
 
 
 body {
+  padding: 0;
+  margin: 0;
   background-color: var(--main-color);
   font-family: var(--font-family-title);
 }
 
 .container{
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;

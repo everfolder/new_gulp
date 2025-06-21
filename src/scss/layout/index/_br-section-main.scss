@@ -1,0 +1,51 @@
+@use '../../utils/variables';
+
+.content{
+  &__br-section {
+    display: flex;
+    justify-content: center;
+
+    .block-content-br{
+
+      width: 90%;
+      margin-top: 5%;
+
+      &__header{  
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 100%;
+        letter-spacing: 0px;
+        text-align: center;
+        color: var(--main-black-text);
+      }
+
+      &__descriptor{
+        padding-top: 1%;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        text-align: center;
+        font-size: 1.25rem;
+      }
+
+      &__rooms{
+        overflow: hidden;
+        align-items: center;
+        padding-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--gap-xl);
+      }
+    }
+  }
+  .card__body{
+    text-align: center;
+    color: var(--main-black-text);
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 100%;
+    letter-spacing: 0px;
+  }
+}
