@@ -1,0 +1,76 @@
+@use '../../utils/variables';
+
+.shop-btn-buttons__block{
+            
+    display: inline-flex;
+    gap: 40px;
+
+    .shop-btn-buttons__block__first{
+        
+        .shop-btn-buttons-block__first__btn{
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            border: none;
+            background-color: var(--background-color-shop);
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: var(--btn-color-white);
+        }
+    }
+
+    .shop-btn-buttons__block__second{
+        
+        .shop-btn-buttons-block__second__btn{
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            border: none;
+            background-color: var(--main-background-color-shop);
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: var(--brn-color-black);
+        }
+    }
+
+    .shop-btn-buttons__block__third{
+        
+        .shop-btn-buttons-block__third__btn{
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            border: none;
+            background-color: var(--main-background-color-shop);
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: var(--brn-color-black);
+        }
+    }
+
+    .shop-btn-buttons__block__fourth{
+        
+        .shop-btn-buttons-block__fourth__btn{
+            width: 98px;
+            height: 60px;
+            border-radius: 10px;
+            border: none;
+            background-color: var(--main-background-color-shop);
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: var(--brn-color-black);
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        gap: var(--gap-xl);
+    }
+
+}
