@@ -1,0 +1,115 @@
+@use 'utils/variables';
+
+
+
+
+.content__bri-section{
+    margin-top: 5%;
+    overflow: hidden;
+    background-color: var(--main-background-color);
+
+    .block-content-bri{
+        display: flex;
+        align-items: center;
+        margin: 5% 0 5%;
+
+        &__body{
+            width: 40%;
+
+            .block-content-bri-edit{
+                padding: 15% 0 15% 10%;
+
+                .header{
+                    font-weight: 900;
+                    font-size: 2.5rem;
+                    line-height: 120%;
+                    letter-spacing: 0%;
+                    color: var(--main-text);
+                }
+
+                .descriptor{
+                    padding: 2% 0 2%;
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    line-height: 150%;
+                    letter-spacing: 0%;
+                    color: var(--main-var1-colro-text);
+                }
+            }
+            
+        }
+
+        &__choise {
+
+            display: flex;
+            align-items: center;
+            gap: var(--gap-xl);
+
+            .choice-inner-peace {
+                position: relative;
+            
+                &__peace-img {
+                    position: relative; 
+                    display: inline-block;
+                
+                }
+                .p-img {
+
+                }
+
+                .peace-text-block {
+                    width: 50%;
+                    height: 12vh;
+                    background-color: white;
+                    position: absolute;
+                    left: 20px; 
+                    bottom: 20px;
+                    z-index: 2;
+                    
+                    .peace-text-block-edit{
+                        width: 80%;
+                        padding: 15% 0 15% 11%;
+
+                        &__first {
+                            font-weight: 500;
+                            font-size: 1.025rem;
+                            line-height: 150%;
+                            letter-spacing: 0%;
+                            color: #616161;
+                        }
+
+                        &__second {
+                            font-weight: 600;
+                            font-size: 1.75rem;
+                            line-height: 120%;
+                            letter-spacing: 0%;
+                            color: var(--main-text);
+                        }
+                    }
+                }
+
+                .peace-img__btn-next-point {
+                    position: absolute;
+                    right: 33.2%;
+                    bottom: 2.9%;
+                    z-index: 2;
+                }
+            }
+
+            .choise-2{
+                margin-top: -25px;
+                color: blue;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            @media screen and (min-width: 800px){
+                .block-content-bri__choise {
+                    display: none;
+                }
+            }
+
+        }
+    }
+}

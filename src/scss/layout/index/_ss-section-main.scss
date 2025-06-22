@@ -1,0 +1,39 @@
+@use 'utils/variables';
+
+.content{
+
+    &__ss-section{
+        margin-top: 5%;
+        text-align: center;
+        width: 100vw;  
+        height: auto;  
+        min-height: 1000px; 
+        background-image: url('/assets/images/last-image-of-first-page-lg.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: relative; 
+        left: 50%;          
+        right: 50%;          
+        margin-left: -50vw;   
+        margin-right: -50vw;  
+
+        &__title{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 150%;
+            letter-spacing: 0%;
+            color: var(--main-var1-colro-text);
+        }
+
+        &__descriptor{
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 120%;
+            letter-spacing: 0%;
+            color: var(--main-text);
+        }
+
+    }
+
+}
