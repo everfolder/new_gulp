@@ -1,0 +1,86 @@
+@use '../../utils/variables';
+
+
+.inspection-furneture{
+
+
+    &__block{
+
+        display: inline-flex;
+
+        .choice-photo-furneture{
+
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: var(--gap-xl);
+
+        }
+
+
+        .main-photo-furneture{
+
+
+
+
+        }
+
+
+
+        .information-about{
+
+            &__title{
+                font-weight: 400;
+                font-size: 2.625rem;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: var(--brn-color-black);
+            }
+
+            &__cost{
+                font-weight: 500;
+                font-size: 1.5rem;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: var(--footer-text-header);
+            }
+            
+            &__rating{
+                display: inline-flex;
+                gap: var(--gap-xl);
+                align-items: center;
+
+                &__line{
+                    width: 1px;
+                    height: 30px;
+                    background-color: var(--footer-text-header);
+                }
+
+                &__rating-count, .information-about__description, .information-about__size__title{
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    color: var(--footer-text-header);
+                }
+            }
+
+            &__description{
+                color: var(--brn-color-black);
+                width: 50%;
+            }
+
+            &__size{
+
+                &__title{
+                    color: var(--footer-text-header);
+                }
+
+                &__choise{
+                    display: inline-flex;
+                    gap: var(--gap-xl);
+                }
+            }
+        }
+    }
+}

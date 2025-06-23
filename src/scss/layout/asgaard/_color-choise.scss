@@ -1,0 +1,6 @@
+@use '../../utils/variables';
+
+.color-choise-edit{
+    display: inline-flex;
+    gap: var(--gap-l);
+}

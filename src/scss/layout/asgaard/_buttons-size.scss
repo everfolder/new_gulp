@@ -1,0 +1,24 @@
+@use '../../utils/variables';
+
+.btn-size-edit{
+    display: inline-flex;
+    gap: var(--gap-l);
+}
+
+.size-chosie-active, .size-chosie-btn, .size-chosie-btn{
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--brn-color-black);
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--main-background-color-shop);
+    border: none;
+}
+
+.size-chosie-active{
+    background-color: #B88E2F;
+    color: var(--btn-color-white);
+}
