@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        @@include('../components/index/_header-nav.html')
+
+        @@include('../components/_orientation-page-block.html', {
+        "title__header" : "Product Comparison",
+        "where": "Comparison"
+        })
+
+        <section class="add-product">
+            <div class="add-product__block">
+                <div class="add-product__block__view-more">
+                    <div class="add-product__block__view-more__title">
+                        Go to Product page for more Products
+                    </div>
+                    <div class="add-product__block__view-more__link">
+                        <a href="" class="view-more-link">View more</a>
+                    </div>
+                </div>
+                <div class="add-product__block__selected">
+                    <div>
+                        @@include('../components/_add-product__selected-block.html', {
+                        "img" : "./assets/images/selected-1", 
+                        "selected-title" : "Asgaard Sofa",
+                        "selected-cost" : "Rs. 250,000.00",
+                        "int-rating" : "4.7",
+                        "review" : "204 Review"
+                        })
+                    </div>
+                    <div>
+                        @@include('../components/_add-product__selected-block.html', {
+                        "img" : "./assets/images/selected-1", 
+                        "selected-title" : "Outdoor Sofa Set",
+                        "selected-cost" : "Rs. 224,000.00",
+                        "int-rating" : "4.2",
+                        "review" : "145 Review"
+                        })
+                    </div>
+                </div>  
+                <div class="add-product__block__choose">
+                    <div class="add-product__block__choose__title">
+                        Add A Product
+                    </div>
+                    <div class="add-product__block__choose__select">
+                        <select name="" id="" class="choose-select">
+                            <option value="">Choose a Product</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <secion class="main-comparison">
+            <table>
+                
+            </table>
+        </section>
+
+    </div>
+</body>
+</html>

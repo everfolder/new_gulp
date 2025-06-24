@@ -28,8 +28,10 @@
 @use 'layout/asgaard/main-text-block__pictures';
 @use 'layout/asgaard/main-text-block';
 @use 'layout/asgaard/related-products';
+@use 'layout/asgaard/overlay';
 
-
+@use 'layout/product-comparison/add-product__selected-block';
+@use 'layout/product-comparison/main-product-comparison';
 
 
 // ==== 4. Components ====
