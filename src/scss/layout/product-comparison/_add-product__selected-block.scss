@@ -1,0 +1,42 @@
+@use '../../utils/variables';
+
+.selected-product{
+
+    &__title, &__cost{
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 126%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: var(--brn-color-black);
+    }
+
+    &__cost{
+        font-size: 1.125rem;
+    }
+
+    &__rating{
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+
+        &__int, &__reviews{
+            font-weight: 500;
+            font-size: 1.125rem;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: var(--brn-color-black);
+        }
+
+        &__line{
+            height: 30px;
+            width: 1px;
+            background-color: var(--footer-text-header);
+        }
+
+        &__reviews{
+            color: var(--footer-text-header);
+            font-size: 0.8125rem;
+        }
+    }
+}

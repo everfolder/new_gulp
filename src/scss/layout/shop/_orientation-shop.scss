@@ -9,11 +9,18 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center; // Вертикальное центрирование
-    align-items: center;    // Горизонтальное центрирование
+    justify-content: center;
+    align-items: center;
+
+
 
     &__title{
+        margin: var(--gap-xl) 0 var(--gap-xl);
         text-align: center;
+
+        &__logo{
+            margin-bottom: var(--gap-xl);
+        }
 
         &__header{
             font-weight: 600;
