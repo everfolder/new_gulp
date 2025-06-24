@@ -1,0 +1,7 @@
+@use '../../utils/variables';
+
+.main-text-block__pictures__img-block{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: var(--gap-xl);
+}

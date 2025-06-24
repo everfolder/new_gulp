@@ -1,12 +1,19 @@
 @use '../../utils/variables';
 
-
 .inspection-furneture{
 
 
     &__block{
 
         display: inline-flex;
+        gap: var(--gap-xl);
+        justify-content: center;
+        margin-top: 3%;
+
+
+        @media screen and (max-width: 1200px) {
+            flex-wrap: wrap;
+        }
 
         .choice-photo-furneture{
 
@@ -15,19 +22,23 @@
             flex-direction: column;
             gap: var(--gap-xl);
 
+            @media screen and (max-width: 800px) {
+                display: inline-flex;
+                flex-direction: row;
+            }
+
         }
 
 
         .main-photo-furneture{
-
-
-
 
         }
 
 
 
         .information-about{
+
+            width: 50%;
 
             &__title{
                 font-weight: 400;
@@ -38,6 +49,7 @@
             }
 
             &__cost{
+                padding-top: 2%;
                 font-weight: 500;
                 font-size: 1.5rem;
                 line-height: 100%;
@@ -46,6 +58,7 @@
             }
             
             &__rating{
+                padding: 2% 0 2%;
                 display: inline-flex;
                 gap: var(--gap-xl);
                 align-items: center;
@@ -67,11 +80,13 @@
 
             &__description{
                 color: var(--brn-color-black);
-                width: 50%;
+                width: 40%;
             }
 
             &__size{
 
+                padding-top: 2%;
+                
                 &__title{
                     color: var(--footer-text-header);
                 }
@@ -79,6 +94,59 @@
                 &__choise{
                     display: inline-flex;
                     gap: var(--gap-xl);
+                }
+            }
+
+            &__color{
+
+                padding-top: 2%;
+
+                &__title{
+                    color: var(--footer-text-header);
+                }
+
+                &__choise{
+                    padding-top: 2%;
+                    display: inline-flex;
+                    gap: var(--gap-xl);
+                }
+            }
+
+            &__count-things{
+                padding-top: 4%;
+            }
+
+
+            &__footer{
+
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 100%;
+                letter-spacing: 0%;
+
+                display: flex;
+                flex-direction: column;
+                padding-top: 5%;
+                gap: var(--gap-l);
+
+                &__line{
+                    margin-bottom: 2%;
+                    width: 100%;
+                    height: 1px;
+                    background-color: var(--footer-text-header);
+                }
+
+                &__SKU, &__Category, &__Tags, &__Shape{
+
+                    display: inline-flex;
+
+                    &__text1{
+
+                    }
+
+                    &__text2{
+
+                    }
                 }
             }
         }
