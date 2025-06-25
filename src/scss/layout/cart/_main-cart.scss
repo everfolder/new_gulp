@@ -1,0 +1,136 @@
+@use '../../utils/variables';
+
+
+.cart-content{
+    width: 100%;
+    margin: 5% 0 5%;
+
+    &__block{
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gap-xl);
+        justify-content: center;
+
+        &__table{
+
+        }
+
+        &__cart-totals{
+            background-color: var(--main-background-color-shop);
+            padding: 2% 5% 5% 5%;
+
+            &__text{
+
+                font-weight: 600;
+                font-size: 2rem;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: var(--brn-color-black);
+
+                &__title{
+                    text-align: center;
+                    padding-bottom: 25%;
+                }
+
+                &__sum{
+                    padding-bottom: 15%;
+
+                    font-weight: 500;
+                    font-size: 1rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    &__subtotal{
+                        display: inline-flex;
+                        gap: 60px;
+                        .Subtotal-span{
+                            font-weight: 400;
+                            color: var(--footer-text-header);
+                        }
+                    }
+
+                    &__total{
+                        padding-top: 5%;
+                        display: inline-flex;
+                        gap: 60px;
+                        .Total-span{
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 100%;
+                            color: var(--btn-yellow-text);
+                        }
+                    }
+                }
+
+                &__button{
+                    text-align: center;
+
+                    &__btn{
+                        width: 90%;
+                        height: 5vh;
+                        border-radius: 15px;
+                        border: 1px solid var(--brn-color-black);
+                        background-color: transparent;
+
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.table-cart{
+    border: 0px solid var(--main-background-color-shop);
+    border-collapse: collapse;
+
+}
+
+.thead-cart{
+    background-color: var(--main-background-color-shop);
+}
+.th-cart, .th-cart-body{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(brn-color-black);
+    text-align: left;
+    padding: 4% 0 4%;
+    width: 150px;
+
+    &__itog{
+        text-align: left;
+        vertical-align: middle;
+        color: var(--brn-color-black);
+    }
+    &__delete{
+        text-align: left;
+    }
+}
+
+.th-cart-body{
+    color: var(--footer-text-header);
+}
+
+.th-edit-title{
+    font-weight: 700;
+    font-size: 1.75rem;
+    text-align: left;
+    padding: 4%;
+    border-right: 2px solid #E8E8E8;
+}
+
+.layout-table-cart{
+    display: flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid var(--footer-text-header);
+    justify-content: center;
+    align-items: center;
+    color: var(--brn-color-black);
+}
