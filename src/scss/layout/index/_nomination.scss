@@ -3,6 +3,7 @@
 .nomination-block{
     width: 100%;
     height: 270px;
+    // height: auto; чисто для +- 480px буду юзать, иначе уже никак 
     background-color: var(--main-background-color-nomination);
     display: flex;
     align-items: center;
