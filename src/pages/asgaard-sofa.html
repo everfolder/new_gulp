@@ -27,7 +27,7 @@
                     </div>
                     <div class="asgaard-path-main-path__content__line"></div>
                     <div class="asgaard-path-main-path__content__text-2">
-                        Asgaard sofa
+                         <a href="./asgaard-sofa-cart.html">Asgaard sofa</a>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                         <div class="information-about__color__title">
                             Color
                         </div>
-                        <div class="information-about__color__choice">
+                        <div class="information-about__color__choise">
                             @@include('../components/_color-choice.html')
                         </div>
                     </div>
@@ -148,7 +148,95 @@
             </div>
         </section>
 
+        <section class="main-text-block">
+            <div class="main-text-block__line"></div>
+            <div class="main-text-block__title">
+                <div class="main-text-block__title__actual">
+                    Description
+                </div>
+                <div class="main-text-block__title__text">
+                    Additional Information
+                </div>
+                <div class="main-text-block__title__text">
+                    Reviews [5]
+                </div>
+            </div>
+            <div class="main-text-block__description">
+                <div class="main-text-block__description__edit">
+                    <div class="main-text-block__description__text1">
+                        Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.
+                    </div>
+                    <div class="main-text-block__description__text2">
+                        Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel.
+                    </div>
+                </div>
+            </div>
+            <div class="main-text-block__pictures">
+                <!-- тут поставь html -->
+                @@include('../components/_main-text-block__pictures.html', {
+                "img": "./assets/images/main-text-block__pictures-2",})
 
+                @@include('../components/_main-text-block__pictures.html', {
+                "img": "./assets/images/main-text-block__pictures-1",})
+            </div>
+            <div class="main-text-block__line"></div>
+        </section>
+
+        <section class="related-products">
+
+            <div class="related-products__title">
+                Related Products
+            </div>
+            <div class="related-products__list">
+                <div>
+                    @@include('../components/_el-furneture.html', {
+                    "img": "./assets/images/furneture-1",
+                    "imgsell": "./assets/images/sell",
+                    "title": "Syltherine", 
+                    "descriptor": "Stylish cafe chair", 
+                    "cost": "Rp 2.500.000",
+                    "furn-span": "Rp 3.500.000"
+                    })
+                </div>
+                <div>
+                    @@include('../components/_el-furneture.html', {
+                    "img": "./assets/images/furneture-2",
+                    "imgsell": "",
+                    "title": "Leviosa", 
+                    "descriptor": "Stylish cafe chair", 
+                    "cost": "Rp 2.500.000",
+                    "furn-span": ""
+                    })
+                </div>
+                <div>
+                    @@include('../components/_el-furneture.html', {
+                    "img": "./assets/images/furneture-3",
+                    "imgsell": "./assets/images/sell_-50",
+                    "title": "Lolito", 
+                    "descriptor": "Luxury big sofa", 
+                    "cost": "Rp 7.500.000",
+                    "furn-span": "Rp 14.000.000"
+                    })
+                </div>
+                <div>
+                    @@include('../components/_el-furneture.html', {
+                    "img": "./assets/images/furneture-4",
+                    "imgsell": "./assets/images/sell_new",
+                    "title": "Respira", 
+                    "descriptor": "Outdoor bar table and stool", 
+                    "cost": "Rp 500.000",
+                    "furn-span": ""
+                    })
+                </div>
+            </div>
+            <div class="related-products__button">
+                <button class="related-products__button__btn">
+                    Show More
+                </button>
+            </div>
+        </section>
+
+        @@include('../components/index/footer/_footer.html')
     </div>
 </body>
 </html>

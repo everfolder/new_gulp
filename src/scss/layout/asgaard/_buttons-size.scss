@@ -1,6 +1,7 @@
 @use '../../utils/variables';
 
 .btn-size-edit{
+    margin-top: 2%;
     display: inline-flex;
     gap: var(--gap-l);
 }

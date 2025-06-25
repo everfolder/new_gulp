@@ -1,0 +1,9 @@
+@use '../../utils/variables';
+
+.cart-block{
+    width: 417px;
+    height: 746px;
+    background-color: white;
+    z-index: 11;   
+    position: absolute;
+}

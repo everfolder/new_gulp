@@ -25,10 +25,16 @@
 @use 'layout/asgaard/buttons-size';
 @use 'layout/asgaard/color-choise';
 @use 'layout/asgaard/count-things';
+@use 'layout/asgaard/main-text-block__pictures';
+@use 'layout/asgaard/main-text-block';
+@use 'layout/asgaard/related-products';
 
+@use 'layout/asgaard/cart-block';
 
 @use 'layout/product-comparison/add-product__selected-block';
 @use 'layout/product-comparison/main-product-comparison';
+
+@use 'layout/product-comparison/table';
 
 
 // ==== 4. Components ====
@@ -47,4 +53,21 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+
+.overlay {
+  position: relative;
+}
+
+.overlay::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  pointer-events: none;
 }

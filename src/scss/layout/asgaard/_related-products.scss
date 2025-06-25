@@ -1,0 +1,33 @@
+@use '../../utils/variables';
+
+.related-products{
+
+    &__title{
+        text-align: center;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: var(--brn-color-black);
+    }
+
+    &__list{
+        display: flex;
+        justify-content: center;
+        gap: var(--gap-xl);
+        flex-wrap: wrap;
+        margin: 3% 0 3%;
+    }
+
+    &__button{
+        display: flex;
+        justify-content: center;
+        &__btn{
+            width: 245px;
+            height: 48px;
+            background-color: transparent;
+            border: 1px solid #B88E2F;
+            color: #B88E2F;
+        }
+    }
+}
