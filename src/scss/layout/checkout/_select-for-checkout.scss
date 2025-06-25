@@ -1,0 +1,21 @@
+.form-checkout-edit{
+    margin-top: 6%;
+
+    &__select{
+        background-color: transparent;
+        border-radius: 10px;
+        border: 1px solid var(--footer-text-header);
+        width: 453px;
+        height: 75px;
+
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: var(--footer-text-header);
+        box-sizing: border-box;
+        padding-left: var(--gap-xl);
+
+        
+    }
+}

@@ -41,6 +41,12 @@
 @use 'layout/cart/main-cart';
 
 
+@use 'layout/checkout/main-checkout';
+@use 'layout/checkout/input-for-checkout';
+@use 'layout/checkout/select-for-checkout';
+@use 'layout/checkout/order-info-sections';
+
+
 // ==== 4. Components ====
 
 
