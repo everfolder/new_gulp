@@ -61,6 +61,16 @@
     gap: 30%;
     justify-content: center;
 
+    @media screen and (max-width: 1100px) {
+        gap: 50px;
+    }
+
+    @media screen and (max-width: 650px) {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
     .shop-filter-block{
 
         display: inline-flex;

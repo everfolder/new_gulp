@@ -28,6 +28,8 @@
 @use 'layout/asgaard/main-text-block__pictures';
 @use 'layout/asgaard/main-text-block';
 @use 'layout/asgaard/related-products';
+@use 'layout/asgaard/cart-furneture';
+@use 'layout/asgaard/btn-cart';
 
 @use 'layout/asgaard/cart-block';
 
@@ -47,6 +49,10 @@
 @use 'layout/checkout/order-info-sections';
 
 @use 'layout/contact/main-contact';
+
+
+@use 'layout/blog/blog-main-component';
+@use 'layout/blog/main-blog';
 
 
 // ==== 4. Components ====

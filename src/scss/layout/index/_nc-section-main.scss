@@ -16,6 +16,7 @@
     }
     .block-content{
         width: 35%;
+        min-width: 334px;
         margin-right: 4%;
         background-color: #FFF3E3;
         display: flex;
@@ -23,6 +24,7 @@
         justify-content: flex-start;
         gap: var(--gap-x);
         padding: 4%;
+
         &__header{
             font-weight: 600;
             font-size: 16px;

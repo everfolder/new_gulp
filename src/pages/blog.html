@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        @@include('../components/index/_header-nav.html')
+
+        @@include('../components/_orientation-page-block.html', {
+        "title__header" : "Blog",
+        "where": "Blog"
+        })
+
+        <section class="blog-section">
+            <div class="blog-section__main-block">
+                <div class="blog-section-1">
+                    @@include('../components/_blog-main-component.html', {
+                    "img" : "./assets/images/blog-img-1",
+                    "name" : "Admin", 
+                    "date" : "14 Oct 2022",
+                    "made" : "Wood",
+                    "title" : "Going all-in with millennial design",
+                    "message" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum."
+                    })
+                </div>
+
+                
+
+                <div class="blog-section-1">
+                    @@include('../components/_blog-main-component.html', {
+                    "img" : "./assets/images/blog-img-1",
+                    "name" : "Admin", 
+                    "date" : "14 Oct 2022",
+                    "made" : "Wood",
+                    "title" : "Going all-in with millennial design",
+                    "message" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum."
+                    })
+                </div>
+
+                <div class="blog-section-1">
+                    @@include('../components/_blog-main-component.html', {
+                    "img" : "./assets/images/blog-img-1",
+                    "name" : "Admin", 
+                    "date" : "14 Oct 2022",
+                    "made" : "Wood",
+                    "title" : "Going all-in with millennial design",
+                    "message" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum."
+                    })
+                </div>
+            </div>
+            <div class="blog-section__categories-block">
+                
+            </div>
+        </section>
+
+
+        <section class="nomination-section">
+            @@include('../components/_nomination.html')
+        </section>
+
+        @@include('../components/index/footer/_footer.html')
+    </div>
+</body>
+</html>

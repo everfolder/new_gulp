@@ -12,6 +12,10 @@
     gap: 55px;
     margin-bottom: -4%;
 
+    @media screen and (max-width: 600px) {
+        height: auto;
+    }
+
 
 // надо media
 

@@ -1,73 +1,78 @@
 @use '../../utils/variables';
 
-.add-product{
+.add-product {
 
-    &__block{
+
+    &__block {
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
 
-        &__view-more{
+        @media screen and (max-width: 1150px) {
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap-xl);
+        }
+
+        
+        &__view-more {
             width: 20%;
+            min-width: 245px;
 
-            &__title{
-                width: 100%;
+            @media screen and (max-width: 1150px) {
+                text-align: center;
+            }
+
+            &__title {
                 font-weight: 600;
                 font-size: 2rem;
                 line-height: 126%;
-                letter-spacing: 0%;
-                vertical-align: middle;
-
             }
 
-            &__link{
-
-                .view-more-link{
-                    font-weight: 500;
-                    font-size: 20px;
-                    line-height: 100%;
-                    letter-spacing: 0%;
-                    color: var(--main-link-grey-color);
-                }
+            &__link .view-more-link {
+                font-weight: 500;
+                font-size: 20px;
+                color: var(--main-link-grey-color);
             }
         }
-        
-        &__selected{
-            display: inline-flex;
+
+        &__selected {
+            display: inline-flex; 
             align-items: center;
             gap: var(--gap-l);
             margin-top: 3%;
             flex-wrap: wrap;
             width: 50%;
+
+            @media screen and (max-width: 600px) {
+                display: flex;
+                justify-content: center;
+            }
+
+           
+            @media screen and (max-width: 1150px) {
+                display: inline-flex; 
+                width: 100%;
+            }
         }
 
-        &__choose{
-            &__title{
+        &__choose {
+            &__title {
                 font-weight: 700;
                 font-size: 1.5rem;
-                line-height: 126%;
-                letter-spacing: 0%;
-                vertical-align: middle;
                 color: var(--brn-color-black);
             }
 
-            &__select{
-
-                .choose-select{
-                    width: 242px;
-                    height: 39px;
-                    background-color: var(--background-color-shop);
-                    color: var(--btn-color-white);
-                    border: none;
-                    border-radius: 5px;
-
-                    font-weight: 600;
-                    font-size: 14px;
-                    font-size: 1.14rem;
-                    line-height: 126%;
-                    letter-spacing: 0%;
-                    vertical-align: middle;
-                }
+            &__select .choose-select {
+                width: 242px;
+                height: 39px;
+                background-color: var(--background-color-shop);
+                color: var(--btn-color-white);
+                border: none;
+                border-radius: 5px;
+                font-weight: 600;
+                font-size: 1.14rem;
             }
         }
     }

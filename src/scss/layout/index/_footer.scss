@@ -61,6 +61,7 @@
             &__form{
 
                 display: flex;
+                flex-wrap: wrap;
                 gap: var(--gap-l);
                 font-size: 0.875rem;
 

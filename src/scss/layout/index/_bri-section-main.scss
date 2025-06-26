@@ -7,11 +7,19 @@
     margin-top: 5%;
     overflow: hidden;
     background-color: var(--main-background-color);
+    display: flex;
+    justify-content: center;
 
     .block-content-bri{
         display: flex;
         align-items: center;
         margin: 5% 0 5%;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 1300px) {
+            display: flex;
+            justify-content: center;
+        }
 
         &__body{
             width: 40%;
@@ -44,6 +52,12 @@
             display: flex;
             align-items: center;
             gap: var(--gap-xl);
+            flex-wrap: wrap;
+
+            @media screen and (max-width: 800px) {
+                display: flex;
+                justify-content: center;
+            }
 
             .choice-inner-peace {
                 position: relative;

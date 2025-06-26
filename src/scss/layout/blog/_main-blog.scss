@@ -1,0 +1,17 @@
+@use '../../utils/variables';
+
+.blog-section{
+
+    &__main-block{
+        width: 817px;
+        
+        @media screen and (max-width: 800px) {
+            width: 450px;
+        }
+
+        &-1{
+            width: 100%;
+        }
+    }
+    
+}

@@ -114,6 +114,11 @@
 
             &__count-things{
                 padding-top: 4%;
+
+                @media screen and (max-width: 660px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
             }
 
 
