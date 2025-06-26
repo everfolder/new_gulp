@@ -1,0 +1,35 @@
+@use '../../utils/variables';
+
+.el-categories{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    gap: var(--gap-l);
+    padding-bottom: 8%;
+
+    &__img{
+
+
+    }
+
+    &__message{
+
+        &__title{
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 150%;
+            letter-spacing: 0%;
+            color: var(--brn-color-black);
+
+        }
+
+        &__date{
+            font-weight: 400;
+            font-size: 0.9rem;
+            line-height: 150%;
+            letter-spacing: 0%;
+            color: var(--footer-text-header);
+
+        }
+    }
+}

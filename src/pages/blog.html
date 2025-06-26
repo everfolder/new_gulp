@@ -32,31 +32,112 @@
 
                 <div class="blog-section-1">
                     @@include('../components/_blog-main-component.html', {
-                    "img" : "./assets/images/blog-img-1",
+                    "img" : "./assets/images/blog-img-2",
                     "name" : "Admin", 
                     "date" : "14 Oct 2022",
-                    "made" : "Wood",
-                    "title" : "Going all-in with millennial design",
+                    "made" : "Handmade",
+                    "title" : "Exploring new ways of decorating",
                     "message" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum."
                     })
                 </div>
 
                 <div class="blog-section-1">
                     @@include('../components/_blog-main-component.html', {
-                    "img" : "./assets/images/blog-img-1",
+                    "img" : "./assets/images/blog-img-3",
                     "name" : "Admin", 
                     "date" : "14 Oct 2022",
                     "made" : "Wood",
-                    "title" : "Going all-in with millennial design",
+                    "title" : "Handmade pieces that took time to make",
                     "message" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum."
                     })
                 </div>
             </div>
             <div class="blog-section__categories-block">
-                
+                <form class="blog-section__categories-block__forms">
+                    <input type="text" class="blog-section__categories-block__forms__input">
+                </form>
+                <div class="blog-section__categories-block__main-categories">
+                    <div class="blog-section__categories-block__main-categories__title">
+                        Categories
+                    </div>
+                    <div class="blog-section__categories-block__main-categories__count">
+                        <div class="blog-section__categories-block__main-categories__count__element">
+                            <p>Crafts</p>
+                            <p>2</p>
+                        </div>
+                        <div class="blog-section__categories-block__main-categories__count__element">
+                            <p>Design</p>
+                            <p>8</p>
+                        </div>
+                        <div class="blog-section__categories-block__main-categories__count__element">
+                            <p>Handmade</p>
+                            <p>7</p>
+                        </div>
+                        <div class="blog-section__categories-block__main-categories__count__element">
+                            <p>Interior</p>
+                            <p>1</p>
+                        </div>
+                        <div class="blog-section__categories-block__main-categories__count__element">
+                            <p>Wood</p>
+                            <p>6</p>
+                        </div>
+                    </div>
+                    <div class="blog-section__categories-block__main-categories__recent-posts">
+                        <div class="blog-section__categories-block__main-categories__recent-posts__title">
+                            Recent Posts
+                        </div>
+                        <div class="blog-section__categories-block__main-categories__recent-posts__main-cont">
+                            <!-- Тут будет _el-blog-main-categories.html -->
+
+                            <div>
+                                @@include('../components/_el-blog-main-categories.html', {
+                                "img" : "./assets/images/for-categories-1",
+                                "message" : "Going all-in with millennial design",
+                                "date" : "03 Aug 2022"
+                                })
+                            </div>
+
+                            <div>
+                                @@include('../components/_el-blog-main-categories.html', {
+                                "img" : "./assets/images/for-categories-2",
+                                "message" : "Exploring new ways of decorating",
+                                "date" : "03 Aug 2022"
+                                })
+                            </div>
+
+                            <div>
+                                @@include('../components/_el-blog-main-categories.html', {
+                                "img" : "./assets/images/for-categories-3",
+                                "message" : "Handmade pieces that took time to make",
+                                "date" : "03 Aug 2022"
+                                })
+                            </div>
+
+                            <div>
+                                @@include('../components/_el-blog-main-categories.html', {
+                                "img" : "./assets/images/for-categories-4",
+                                "message" : "Modern home in Milan",
+                                "date" : "03 Aug 2022"
+                                })
+                            </div>
+
+                            <div>
+                                @@include('../components/_el-blog-main-categories.html', {
+                                "img" : "./assets/images/for-categories-5",
+                                "message" : "Colorful office redesign",
+                                "date" : "03 Aug 2022"
+                                })
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <section class="shop-buttons-section">
+            @@include('../components/_shop-buttons.html')
+        </section>
 
         <section class="nomination-section">
             @@include('../components/_nomination.html')

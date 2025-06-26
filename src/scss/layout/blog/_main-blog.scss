@@ -1,6 +1,17 @@
 @use '../../utils/variables';
 
 .blog-section{
+    padding: 5% 0 5%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 60px;
+
+    @media screen and (max-width: 1221px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 70%;
+    }
 
     &__main-block{
         width: 817px;
@@ -14,4 +25,77 @@
         }
     }
     
+    &__categories-block{
+
+        &__forms{
+
+            &__input{
+                background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20L15.514 15.506M18 9.5C18 11.7543 17.1045 13.9163 15.5104 15.5104C13.9163 17.1045 11.7543 18 9.5 18C7.24566 18 5.08365 17.1045 3.48959 15.5104C1.89553 13.9163 1 11.7543 1 9.5C1 7.24566 1.89553 5.08365 3.48959 3.48959C5.08365 1.89553 7.24566 1 9.5 1C11.7543 1 13.9163 1.89553 15.5104 3.48959C17.1045 5.08365 18 7.24566 18 9.5V9.5Z' stroke='black' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: right 8px center;
+                padding-right: 30px;
+
+                border: 1px solid var(--footer-text-header);
+                background-color: transparent;
+                width: 311px;
+                height: 58px;
+                border-radius: 10px;
+
+
+                @media screen and (max-width: 1221px) {
+                    width: 95%;
+                }
+            }
+        }
+
+        &__main-categories{
+            padding-top: 15%;
+            width: 90%;
+            
+
+            &__title, &__recent-posts{
+                padding: 0 0 3% 5%;
+                font-weight: 500;
+                font-size: 1.5rem;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: var(--brn-color-black);
+
+            }
+
+            &__count{
+                padding-left: 5%;
+
+                &__element{
+                    padding-top: 5%;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: var(--footer-text-header);
+
+                }
+            }
+
+            &__recent-posts{
+
+                &__title{
+                    padding-top: 50%;
+
+                }
+
+                &__main-cont{
+                    padding-top: 10%;
+
+                }
+            }
+
+            
+        }
+    }
+
+
 }
