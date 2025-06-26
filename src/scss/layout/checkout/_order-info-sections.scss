@@ -1,0 +1,37 @@
+@use '../../utils/variables';
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.checkbox-input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--footer-text-header);
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.checkbox-input:checked {
+  background-color: var(--brn-color-black);
+  border-color: var(--brn-color-black);
+  animation: fillCircle 0.3s ease;
+}
+
+.checkbox-text {
+  color: var(--footer-text-header);
+  transition: color 0.3s ease;
+}
+
+.checkbox-input:checked ~ .checkbox-text {
+  color: var(--brn-color-black);
+  font-weight: 500;
+}

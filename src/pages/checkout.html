@@ -19,13 +19,133 @@
         <section class="belling-details">
             <div class="belling-details__block">
                 <div class="belling-details__block__for-forms">
+                    <div class="belling-details__block__for-forms__title">
+                        <h3>Billing details</h3>
+                    </div>
+                    <form action="" class="belling-details__block__for-forms__forms">
+                        <div class="belling-details__block__for-forms__forms__name">
 
+                            <!-- name-form находится в _input-for-checkout.scss -->
+
+                            <div class="belling-details__block__for-forms__forms__name-1">
+                                <label for="FirstName">First Name</label>
+                                <input type="text" id="FirstName" class="name-form" />
+                            </div>
+
+                            <div class="belling-details__block__for-forms__forms__name-1">
+                                <label for="LastName">Last Name</label>
+                                <input type="text" id="LastName"  class="name-form" />
+                            </div>
+                            
+                        </div>
+
+                        @@include('./_input-for-checkout.html', {
+                        "label" : "Company Name (Optional)",
+                        "place" : ""
+                        })
+                        
+                        @@include('./_select-for-checkout.html', {
+                        "label" : "Country / Region", 
+                        "option" : "Russia"
+                        })
+
+                        @@include('./_input-for-checkout.html', {
+                        "label" : "Street address",
+                        "place" : ""
+                        })
+
+                        @@include('./_input-for-checkout.html', {
+                        "label" : "Town / City",
+                        "place" : ""
+                        })
+
+                        @@include('./_select-for-checkout.html', {
+                        "label" : "Province", 
+                        "option" : "Bolshoe Kozino"
+                        })
+
+                        @@include('./_input-for-checkout.html', {
+                        "label" : "ZIP code",
+                        "place" : ""
+                        })
+
+                        @@include('./_input-for-checkout.html', {
+                        "label" : "Phone",
+                        "place" : ""
+                        })
+
+                        @@include('./_input-for-checkout.html', {
+                        "label" : "Email address",
+                        "place" : ""
+                        })
+
+                        @@include('./_input-for-checkout.html', {
+                        "label" : "",
+                        "place" : "Additional information"
+                        })
+                    </form>
                 </div>
                 <div class="belling-details__block__for-product">
+                    <div class="belling-details__block__for-product__final-cost">
+                        <div class="belling-details__block__for-product__final-cost__title">
+                            <div>Product</div>
+                            <div>Subtotal</div>
+                        </div>
+                        <div class="belling-details__block__for-product__final-cost__cost-count">
+                            <div>Asgaard sofa <span class="cost-count-span">x 1</span></div>
+                            <div>Rs. 250,000.00</div>
+                        </div>
+                        <div class="belling-details__block__for-product__final-cost__cost-subtotal">
+                            <div>Subtotal</div>
+                            <div>Rs. 250,000.00</div>
+                        </div>
+                        <div class="belling-details__block__for-product__final-cost__cost-total">
+                            <div class="cost-total-edit">Total</div>
+                            <div class="cost-total-price">Rs. 250,000.00</div>
+                        </div>
+                        <div class="belling-details__block__for-product__final-cost__line"></div>
+                        
+                        <div class="footer-input-edit">
+                            @@include('./_order-info-sections.html', {
+                            "label" : "Direct Bank Transfer"
+                            })
+                        </div>
 
+                        <div class="belling-details__block__for-product__final-cost__active-input-text">
+                            Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+                        </div>
+
+                        <div class="footer-input-edit">
+                            @@include('./_order-info-sections.html', {
+                            "label" : "Direct Bank Transfer"
+                            })
+                        </div>
+
+                        <div class="footer-input-edit">
+                            @@include('./_order-info-sections.html', {
+                            "label" : "Cash On Delivery"
+                            })
+                        </div>
+
+                        <div class="belling-details__block__for-product__final-cost__footer-text">
+                            Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <span class="footer-text-span">privacy policy.</span>
+                        </div>
+
+                        <div class="belling-details__block__for-product__final-cost__footer-btn">
+                            <button class="belling-details__block__for-product__final-cost__footer-btn__btn">
+                                Place order
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <section class="nomination-section">
+            @@include('../components/_nomination.html')
+        </section>
+
+        @@include('../components/index/footer/_footer.html')
     </div>
 </body>
 </html>
