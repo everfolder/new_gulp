@@ -1,99 +1,96 @@
 @use '../../utils/variables';
 
-.main-text-block{
-
-    &__line{
+.main-text-block {
+    &__line {
         width: 100vw;
         height: 1px;
         background-color: var(--footer-text-header);
-        margin: 3% 0 3%;
+        margin: 12px 0;
     }
 
-    &__title{
-        margin-bottom: 3%;
-
+    &__title {
+        margin-bottom: 12px;
         width: 100%;
         display: flex;
         justify-content: center;
-        gap: 50px;
-
+        gap: 20px;
+        flex-wrap: wrap;
         font-weight: 500;
-        font-size: 1.5rem;
-        line-height: 100%;
-        letter-spacing: 0%;
+        font-size: 1.25rem;
+        line-height: 120%;
         color: var(--footer-text-header);
 
-        &__actual{
+        &__actual {
             color: var(--brn-color-black);
         }
 
         @media screen and (max-width: 590px) {
             font-size: 1rem;
+            gap: 15px;
         }
 
-        @media screen and (max-width: 590px) {
-            display: flex;
-            flex-wrap: wrap;
+        @media screen and (max-width: 390px) {
+            font-size: 0.9rem;
+            gap: 10px;
+
         }
     }
 
-    &__description{
+    &__description {
         font-weight: 400;
-        font-size: 1rem;
-        line-height: 100%;
-        letter-spacing: 0%;
+        font-size: 0.9rem;
+        line-height: 1.5; /* Улучшенный межстрочный интервал */
         color: var(--footer-text-header);
         display: flex;
-        justify-content: center;
+        flex-direction: column; /* Меняем на колонку для мобильных */
+        align-items: center; /* Центрируем по горизонтали */
         text-align: center;
+        padding: 0 16px;
+        width: 100%; /* Добавляем явную ширину */
+        box-sizing: border-box; /* Учитываем padding в ширине */
 
-        &__edit{
-            width: 62%;
-            min-width: 400px;
+        &__edit {
+            width: 100%;
+            max-width: 340px; /* Уменьшаем максимальную ширину */
             display: flex;
             flex-direction: column;
-            gap: var(--gap-xl);
-            text-align: justify;
-            margin-bottom: 3%;
+            gap: 12px;
+            text-align: center; /* Всегда центрируем текст */
+            margin-bottom: 16px;
 
-            &__text1, &__text2{
-                width: 70%;
-            }
-        }
-
-        @media screen and (max-width: 800px) {
-            &__edit {
-                width: 30%;
-                gap: var(--gap-l);
-
-                &__text1, &__text2 {
-                    width: 85%;
-                }
+            &__text1, &__text2 {
+                width: 100%;
+                text-align: center; /* Центрируем текст внутри */
+                word-break: break-word; /* Перенос длинных слов */
             }
         }
 
         @media screen and (max-width: 480px) {
-            font-size: 0.9rem;
-            line-height: 130%;
+            font-size: 0.85rem;
+            padding: 0 12px;
 
             &__edit {
-                width: 400px;
-                gap: var(--gap-l);
-                text-align: left; 
-
-                &__text1, &__text2 {
-                    width: 100%; 
-                }
+                max-width: 300px;
+                gap: 10px;
             }
         }
 
-        
-    }
+        @media screen and (max-width: 390px) {
+            font-size: 0.8rem;
+            line-height: 1.6;
+            padding: 0 8px;
 
-    &__pictures{
+            &__edit {
+                max-width: 280px;
+            }
+        }
+    }
+    
+    &__pictures {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 30px;
+        gap: 15px;
+        padding: 0 12px;
     }
 }

@@ -10,6 +10,15 @@ import browserSync from 'browser-sync';
 import webp from 'gulp-webp';
 import responsive from 'gulp-sharp-responsive';
 import newer from "gulp-newer";
+import ghPages from 'gh-pages';
+
+export const deploy = (done) => {
+  ghPages.publish('dist', {
+    dotfiles: true,
+    branch: 'gh-pages',
+    message: 'Auto-generated commit'
+  }, done);
+};
 
 const sass = gulpSass(dartSass);
 const bs = browserSync.create();

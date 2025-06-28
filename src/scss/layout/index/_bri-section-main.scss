@@ -1,74 +1,141 @@
 @use 'utils/variables';
 
-
-
-
-.content__bri-section{
+.content__bri-section {
     margin-top: 5%;
     overflow: hidden;
     background-color: var(--main-background-color);
     display: flex;
     justify-content: center;
 
-    .block-content-bri{
+    .block-content-bri {
         display: flex;
         align-items: center;
         margin: 5% 0 5%;
         flex-wrap: wrap;
 
-        @media screen and (max-width: 1300px) {
+        @media screen and (max-width: 1310px) {
+            text-align: center;
+            width: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
         }
 
-        &__body{
+        
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+            align-items: center;
+            margin: 10% 0;
+        }
+
+        
+        @media screen and (max-width: 450px) {
+            margin: 15% 0;
+        }
+
+        
+        @media screen and (max-width: 390px) {
+            margin: 20% 0;
+        }
+
+        &__body {
             width: 40%;
 
-            .block-content-bri-edit{
+            
+            @media screen and (max-width: 800px) {
+                width: 80%;
+                padding: 0 5%;
+            }
+
+            
+            @media screen and (max-width: 450px) {
+                width: 90%;
+                padding: 0;
+            }
+
+            .block-content-bri-edit {
                 padding: 15% 0 15% 10%;
 
-                .header{
+                
+                @media screen and (max-width: 800px) {
+                    padding: 10% 0;
+                    text-align: center;
+                }
+
+                .header {
                     font-weight: 900;
                     font-size: 2.5rem;
                     line-height: 120%;
                     letter-spacing: 0%;
                     color: var(--main-text);
+
+                    
+                    @media screen and (max-width: 800px) {
+                        font-size: 2.2rem;
+                    }
+
+                    
+                    @media screen and (max-width: 450px) {
+                        font-size: 2rem;
+                    }
+
+                    
+                    @media screen and (max-width: 390px) {
+                        font-size: 1.8rem;
+                    }
                 }
 
-                .descriptor{
+                .descriptor {
                     padding: 2% 0 2%;
                     font-weight: 500;
                     font-size: 1.5rem;
                     line-height: 150%;
                     letter-spacing: 0%;
                     color: var(--main-var1-colro-text);
+
+                    
+                    @media screen and (max-width: 800px) {
+                        font-size: 1.3rem;
+                    }
+
+                    
+                    @media screen and (max-width: 450px) {
+                        font-size: 1.1rem;
+                    }
+
+                    
+                    @media screen and (max-width: 390px) {
+                        font-size: 1rem;
+                    }
                 }
             }
-            
         }
 
         &__choise {
-
             display: flex;
             align-items: center;
             gap: var(--gap-xl);
             flex-wrap: wrap;
 
+            
             @media screen and (max-width: 800px) {
-                display: flex;
                 justify-content: center;
+                gap: 20px;
+                margin-top: 30px;
+            }
+
+            
+            @media screen and (max-width: 691px) {
+                display: none;
             }
 
             .choice-inner-peace {
                 position: relative;
-            
-                &__peace-img {
-                    position: relative; 
-                    display: inline-block;
-                
-                }
-                .p-img {
 
+                
+                @media screen and (max-width: 800px) {
+                    width: 100%;
+                    max-width: 300px;
                 }
 
                 .peace-text-block {
@@ -76,11 +143,19 @@
                     height: 12vh;
                     background-color: white;
                     position: absolute;
-                    left: 20px; 
+                    left: 20px;
                     bottom: 20px;
                     z-index: 2;
+
                     
-                    .peace-text-block-edit{
+                    @media screen and (max-width: 800px) {
+                        width: 60%;
+                        height: 10vh;
+                        left: 15px;
+                        bottom: 15px;
+                    }
+
+                    .peace-text-block-edit {
                         width: 80%;
                         padding: 15% 0 15% 11%;
 
@@ -90,6 +165,11 @@
                             line-height: 150%;
                             letter-spacing: 0%;
                             color: #616161;
+
+                            
+                            @media screen and (max-width: 800px) {
+                                font-size: 0.9rem;
+                            }
                         }
 
                         &__second {
@@ -98,6 +178,11 @@
                             line-height: 120%;
                             letter-spacing: 0%;
                             color: var(--main-text);
+
+                           
+                            @media screen and (max-width: 800px) {
+                                font-size: 1.5rem;
+                            }
                         }
                     }
                 }
@@ -107,23 +192,28 @@
                     right: 33.2%;
                     bottom: 2.9%;
                     z-index: 2;
+
+                   
+                    @media screen and (max-width: 800px) {
+                        right: 30%;
+                        bottom: 2%;
+                    }
                 }
             }
 
-            .choise-2{
+            .choise-2 {
                 margin-top: -25px;
                 color: blue;
                 display: flex;
                 flex-direction: column;
                 gap: 40px;
-            }
 
-            @media screen and (min-width: 800px){
-                .block-content-bri__choise {
-                    display: none;
+                
+                @media screen and (max-width: 800px) {
+                    margin-top: 0;
+                    gap: 20px;
                 }
             }
-
         }
     }
 }

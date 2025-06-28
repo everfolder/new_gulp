@@ -20,6 +20,10 @@
             width: 450px;
         }
 
+        @media screen and (max-width: 450px) {
+            width: 330px;
+        }
+
         &-1{
             width: 100%;
         }
@@ -44,6 +48,10 @@
 
                 @media screen and (max-width: 1221px) {
                     width: 95%;
+                }
+
+                @media screen and (max-width: 450px) {
+                    width: 300px;
                 }
             }
         }

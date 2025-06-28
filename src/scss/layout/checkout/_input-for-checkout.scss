@@ -39,6 +39,10 @@
         box-sizing: border-box;
         padding-left: var(--gap-xl);
 
-        
+        @media screen and (max-width: 453px) {
+            width: 350px;
+        }
     }
+
+    
 }

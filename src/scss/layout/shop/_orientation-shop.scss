@@ -69,6 +69,24 @@
         display: flex;
         flex-wrap: wrap;
         height: auto;
+        gap: 0px;
+        padding: 5px 0 5px;
+    }
+
+    @media screen and (max-width: 390px) {
+        gap: 10px;
+        padding: 10px 0;
+        
+        .shop-results-block {
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            padding: 0 10px;
+            
+            &__line {
+                display: none; /* Скрываем разделители на маленьких экранах */
+            }
+        }
     }
 
     .shop-filter-block{
